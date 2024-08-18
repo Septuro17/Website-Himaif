@@ -79,15 +79,17 @@
 
       <section id="comments">
         <h2>Comments</h2>
-        <div id="comment-form">
-          <input type="text" id="name-input" placeholder="Nama Anda" />
-          <textarea
-            id="comment-input"
-            placeholder="Tulis komentar Anda..."
-          ></textarea>
-          <button onclick="submitComment()">Kirim</button>
+        <div>
+          <script
+            async
+            src="https://talk.hyvor.com/embed/embed.js"
+            type="module"
+          ></script>
+          <hyvor-talk-comments
+            website-id="11763"
+            page-id=""
+          ></hyvor-talk-comments>
         </div>
-        <div id="comments-section"></div>
       </section>
 
       <section id="rating">
